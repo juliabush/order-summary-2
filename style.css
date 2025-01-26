@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* Fonts */
+    --font-size: 1rem;
+    --ff-main: 'Red Hat Display';
+    --fw-light: 500;
+    --fw-mid: 700;
+    --fw-bold: 900;
+
+    /* Colors */
+/* ### Primary */
+
+--clr-Paleblue: hsl(225, 100%, 94%);
+ --clr-Brightblue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--clr-Verypaleblue: hsl(225, 100%, 98%);
+--clr-Desaturatedblue: hsl(224, 23%, 55%);
+--clr-Darkblue: hsl(223, 47%, 23%);
+}
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  html {
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background-color: var(--clr-Paleblue);
+  }
