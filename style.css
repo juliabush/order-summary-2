@@ -61,6 +61,8 @@
     display: grid;
     place-content: center;
     background-color: var(--clr-Paleblue);
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
   }
   main {
    margin-left: 1.5rem auto;
@@ -158,4 +160,10 @@
     opacity: 0.7;
     cursor: pointer;
     padding-bottom: 1rem;
+}
+@media (min-width:375px) {
+    html {
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-size: contain;
+    }
 }
